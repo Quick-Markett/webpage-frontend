@@ -11,7 +11,7 @@ export async function generateMetadata() {
 }
 
 const Page: NextPage = async () => {
-  return <main>teste</main>
+  return <main></main>
 }
 
 export default Page

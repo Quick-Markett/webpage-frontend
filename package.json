@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^2.1.10",
     "@hookform/resolvers": "^3.9.1",
+    "@tippyjs/react": "^4.2.6",
     "@types/uuid": "^10.0.0",
     "@vectopus/atlas-icons": "^0.0.7",
     "animate.css": "^4.1.1",

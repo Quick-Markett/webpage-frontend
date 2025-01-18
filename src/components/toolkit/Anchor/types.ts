@@ -1,12 +1,6 @@
 import { PropsWithChildren } from 'react'
 
-type AnchorVariantProp =
-  | 'primary'
-  | 'primaryOutline'
-  | 'secondary'
-  | 'secondaryOutline'
-  | 'danger'
-  | 'custom'
+type AnchorVariantProp = 'primary' | 'primaryOutline' | 'danger' | 'custom'
 
 type AnchorSizeProp = 'xs' | 'sm' | 'base' | 'lg' | 'xl' | '2xl'
 

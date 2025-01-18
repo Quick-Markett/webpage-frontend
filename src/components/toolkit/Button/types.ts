@@ -1,12 +1,6 @@
 import { PropsWithChildren } from 'react'
 
-type ButtonVariantProp =
-  | 'primary'
-  | 'primaryOutline'
-  | 'secondary'
-  | 'secondaryOutline'
-  | 'danger'
-  | 'custom'
+type ButtonVariantProp = 'primary' | 'primaryOutline' | 'danger' | 'custom'
 
 type ButtonSizeProp = 'xs' | 'sm' | 'base' | 'lg' | 'xl' | '2xl'
 

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
-import { CustomEventHandler } from '@/types/customEvents/common'
-import { CustomEvents } from '@/types/customEvents/customEvents'
+import { CustomEventHandler } from '@/types/events/common'
+import { CustomEvents } from '@/types/events/customEvents'
 import { createCustomEvent } from '@/utils/customEvents/createCustomEvent'
 import { deleteCustomEvent } from '@/utils/customEvents/deleteCustomEvent'
 

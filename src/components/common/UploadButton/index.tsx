@@ -34,7 +34,7 @@ export const UploadButton: React.FC<UploadButtonProps> = ({
 
   return (
     <>
-      <Button isLoading={isLoading} variant="secondary">
+      <Button isLoading={isLoading} variant="primary">
         <input
           accept="image/*"
           className="absolute left-1/2 top-1/2 z-30 mt-8 -translate-x-1/2 -translate-y-1/2 transform cursor-pointer pb-16 opacity-0"
