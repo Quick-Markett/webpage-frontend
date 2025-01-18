@@ -9,7 +9,7 @@ const nextConfig = {
     includePaths: [path.join(__dirname, 'styles')]
   },
   eslint: { ignoreDuringBuilds: true },
-  reactStrictMode: false,
+  reactStrictMode: true,
   images: {
     domains: [
       'lh3.googleusercontent.com',
@@ -22,15 +22,6 @@ const nextConfig = {
         hostname: '**'
       }
     ]
-  },
-  webpack(config) {
-    config.resolve.alias['@'] = path.resolve(__dirname, 'src')
-    config.experiments = {
-      ...config.experiments,
-      topLevelAwait: true
-    }
-
-    return config
   }
 }
 

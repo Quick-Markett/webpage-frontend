@@ -1,5 +1,7 @@
 import { Metadata } from 'next'
 
+import '@/styles/index.scss'
+
 export const metadata: Metadata = {
   robots: {
     index: false
@@ -13,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt">
-      <body className={''}>{children}</body>
+      <body>{children}</body>
     </html>
   )
 }

@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 
+import { Navbar } from '@/components/common/Navbar'
 import { getMetaData } from '@/utils/getters/getMetaData'
 
 export async function generateMetadata() {
@@ -11,7 +12,11 @@ export async function generateMetadata() {
 }
 
 const Page: NextPage = async () => {
-  return <main></main>
+  return (
+    <>
+      <Navbar /> <main></main>
+    </>
+  )
 }
 
 export default Page
