@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 
 import '@/styles/index.scss'
+import { APP_FONT } from '@/constants/font'
 
 export const metadata: Metadata = {
   robots: {
@@ -15,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt">
-      <body>{children}</body>
+      <body className={APP_FONT.className}>{children}</body>
     </html>
   )
 }

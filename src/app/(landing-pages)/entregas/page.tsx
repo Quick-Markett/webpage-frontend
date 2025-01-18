@@ -1,7 +1,13 @@
 import { NextPage } from 'next'
 
+import { ClientsCarousel } from '@/components/common/ClientsCarousel'
+import { Footer } from '@/components/common/Footer'
 import { Navbar } from '@/components/common/Navbar'
 import { getMetaData } from '@/utils/getters/getMetaData'
+
+import { Header } from './components/Header'
+import { HowItWorks } from './components/HowItWorks'
+import { Markets } from './components/Markets'
 
 export async function generateMetadata() {
   return getMetaData({
@@ -16,8 +22,12 @@ const Page: NextPage = async () => {
     <>
       <Navbar />
       <main>
-        testando
+        <Header />
+        <ClientsCarousel backgroundColor="#f5f5f5" />
+        <HowItWorks />
+        <Markets />
       </main>
+      <Footer />
     </>
   )
 }

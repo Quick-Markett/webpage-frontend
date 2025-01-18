@@ -1,0 +1,196 @@
+[data-cid='clients-carousel'] {
+  $animationSpeed: 70s;
+  $mobileAnimationSpeed: 40s;
+
+  .carousel {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .slider-effect {
+    content: '';
+    position: absolute;
+    z-index: 10;
+
+    height: 100px;
+
+    @media only screen and (max-width: 600px) {
+      width: 75px;
+    }
+
+    @media only screen and (min-width: 600px) {
+      width: 100px;
+    }
+
+    @media only screen and (min-width: 768px) {
+      width: 125px;
+    }
+
+    @media only screen and (min-width: 992px) {
+      width: 150px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+      width: 200px;
+    }
+  }
+
+  .slider {
+    background: transparent;
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 90%;
+
+    &::before,
+    &::after {
+      @extend .slider-effect;
+    }
+
+    &::after {
+      right: -1px;
+      top: 0;
+      transform: rotateZ(180deg);
+    }
+
+    &::before {
+      left: -1px;
+      top: 0;
+    }
+
+    .slide-track {
+      animation: scroll $animationSpeed linear infinite;
+      display: flex;
+      width: calc(350px * 10);
+      &__stop {
+        animation-play-state: paused;
+      }
+    }
+
+    .slide {
+      height: 200px;
+      width: 150px;
+      padding: 6px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .custom-slide {
+      padding: 6px;
+      filter: brightness(0) saturate(100%) invert(66%) sepia(14%) saturate(400%)
+        hue-rotate(176deg) brightness(94%) contrast(93%);
+    }
+
+    .slide.vertical {
+      height: 60px;
+      width: 70px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .slide.center {
+      height: 200px;
+      width: 110px;
+    }
+  }
+
+  .slider-effect-companies-map {
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 200px;
+    z-index: 10;
+  }
+
+  .slider-companies-map {
+    background: transparent;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 90%;
+
+    &::before,
+    &::after {
+      @extend .slider-effect-companies-map;
+    }
+
+    &::after {
+      right: -1px;
+      top: 0;
+      transform: rotateZ(180deg);
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1) 5%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+
+    &::before {
+      left: -1px;
+      top: 0;
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1) 5%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+
+    .slide-track {
+      animation: scroll $animationSpeed linear infinite;
+      display: flex;
+      &__stop {
+        animation-play-state: paused;
+      }
+    }
+
+    .slide {
+      filter: grayscale(1) brightness(0.6) opacity(0.7);
+    }
+
+    .slide.vertical {
+      filter: grayscale(1) brightness(0.6) opacity(0.7);
+    }
+
+    .slide.center {
+      filter: grayscale(1) brightness(0.6) opacity(0.7);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .slide-track {
+      animation: scroll $mobileAnimationSpeed linear infinite;
+      display: flex;
+      width: calc(350px * 10);
+      &__stop {
+        animation-play-state: paused;
+      }
+    }
+  }
+
+  // Styling Cards
+  .slider-card {
+    background: transparent;
+    margin: auto;
+    overflow-x: hidden;
+    position: relative;
+    height: 200px;
+    width: 100%;
+
+    .slide-track {
+      animation: scroll $animationSpeed linear infinite;
+      display: flex;
+      width: calc(300px * 12);
+    }
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-350px * 5));
+    }
+  }
+}

@@ -18,23 +18,23 @@ export const buttonVariants = cva(
     variants: {
       variant: {
         primary: [
-          'text-slate-50',
+          'text-neutral-50',
           'bg-gradient-to-tr',
-          'from-slate-900',
-          'to-slate-800',
+          'from-neutral-900',
+          'to-neutral-800',
           'hover:brightness-[125%]'
         ],
         primaryOutline: [
-          'text-slate-700',
+          'text-neutral-700',
           'border',
-          'border-slate-700',
-          'hover:bg-slate-800',
-          'hover:border-slate-800',
-          'hover:text-slate-50',
+          'border-neutral-700',
+          'hover:bg-neutral-800',
+          'hover:border-neutral-800',
+          'hover:text-neutral-50',
           'hover:brightness-[125%]'
         ],
         danger: [
-          'text-slate-50',
+          'text-neutral-50',
           'bg-gradient-to-tr',
           'from-red-600',
           'via-red-500',

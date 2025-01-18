@@ -1,0 +1,70 @@
+[data-cid="social-media"] {
+  .card {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .socialContainer {
+    width: 32px;
+    height: 32px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+  }
+
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+  }
+
+  .containerTwo:hover {
+    background-color: #c15eec;
+    transition-duration: .3s;
+  }
+
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+  }
+
+  .containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+  }
+
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+  }
+
+  .socialSvg {
+    width: 17px;
+  }
+
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
