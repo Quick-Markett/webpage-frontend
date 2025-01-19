@@ -1,6 +1,6 @@
 import { NextPage } from 'next'
 
-import { getMetaData } from '@/utils/getters/getMetaData'
+import { getMetaData } from '@/utils/seo/getMetaData'
 
 export async function generateMetadata() {
   return getMetaData({

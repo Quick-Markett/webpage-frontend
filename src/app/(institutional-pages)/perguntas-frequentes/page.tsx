@@ -2,7 +2,7 @@ import { NextPage } from 'next'
 
 import { Footer } from '@/components/common/Footer'
 import { Navbar } from '@/components/common/Navbar'
-import { getMetaData } from '@/utils/getters/getMetaData'
+import { getMetaData } from '@/utils/seo/getMetaData'
 
 import { Header } from './components/Header'
 import { Questions } from './components/Questions'

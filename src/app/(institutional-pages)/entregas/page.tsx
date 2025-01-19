@@ -3,7 +3,7 @@ import { NextPage } from 'next'
 import { ClientsCarousel } from '@/components/common/ClientsCarousel'
 import { Footer } from '@/components/common/Footer'
 import { Navbar } from '@/components/common/Navbar'
-import { getMetaData } from '@/utils/getters/getMetaData'
+import { getMetaData } from '@/utils/seo/getMetaData'
 
 import { About } from './components/About'
 import { Header } from './components/Header'
