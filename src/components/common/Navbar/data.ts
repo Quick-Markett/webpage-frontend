@@ -12,8 +12,12 @@ export const NAVBAR_LINKS = [
     href: '/clientes'
   },
   {
-    label: 'Relatórios',
-    href: '/relatorios'
+    label: 'Soluções',
+    href: '/solucoes'
+  },
+  {
+    label: 'Pricing',
+    href: '/pricing'
   },
   {
     label: 'FAQ',
@@ -28,11 +32,11 @@ export const NAVBAR_LINKS = [
     href: '/suporte'
   },
   {
-    label: 'Estoque',
-    href: '/quem-somos'
+    label: 'Termos de uso',
+    href: '/termos-de-uso'
   },
   {
-    label: 'Conta',
-    href: '/conta'
+    label: 'Comunidade',
+    href: '/comunidade'
   }
 ]

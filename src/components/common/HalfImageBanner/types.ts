@@ -6,4 +6,5 @@ export interface HalfImageBannerProps
   extends PropsWithChildren,
     HTMLAttributes<HTMLDivElement> {
   image: ImageCopy
+  imageClassName?: string
 }
