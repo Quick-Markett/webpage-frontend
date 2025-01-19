@@ -1,4 +1,5 @@
 import { CircleButton } from '@/components/common/CircleButton'
+
 import { NearbyMarkets } from '../icons/NearbyMarkets'
 
 export const Markets: React.FC = () => {
