@@ -16,7 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt">
-      <body className={APP_FONT.className}>{children}</body>
+      <body className={`selection:bg-[#ecc79c38] ${APP_FONT.className}`}>
+        {children}
+      </body>
     </html>
   )
 }

@@ -34,6 +34,12 @@ export const anchorVariants = cva(
           'hover:border-slate-800',
           'hover:text-slate-50'
         ],
+        secondary: [
+          'text-neutral-800',
+          'bg-white',
+          'hover:shadow',
+          'hover:brightness-[110%]'
+        ],
         danger: [
           'text-slate-50',
           'bg-gradient-to-tr',

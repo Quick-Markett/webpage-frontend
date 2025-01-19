@@ -14,7 +14,7 @@ export const HowItWorks: React.FC = () => {
             rapidamente e com segurança.
           </p>
         </article>
-        <ul className="flex h-auto w-full justify-between gap-6 lg:items-stretch lg:gap-10 lg:self-stretch">
+        <ul className="flex h-auto w-full flex-col justify-between gap-6 lg:flex-row lg:items-stretch lg:gap-10 lg:self-stretch">
           {CARDS.map((card, index) => (
             <li
               className="flex h-auto w-full flex-col gap-4 rounded-sm border border-neutral-100 bg-neutral-50 p-4"

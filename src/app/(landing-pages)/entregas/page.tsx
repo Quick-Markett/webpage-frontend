@@ -8,8 +8,10 @@ import { getMetaData } from '@/utils/getters/getMetaData'
 import { About } from './components/About'
 import { Header } from './components/Header'
 import { HowItWorks } from './components/HowItWorks'
+import { LearnMore } from './components/LearnMore'
 import { Markets } from './components/Markets'
 import { Stats } from './components/Stats'
+import { TryItNow } from './components/TryItNow'
 
 export async function generateMetadata() {
   return getMetaData({
@@ -30,6 +32,8 @@ const Page: NextPage = async () => {
         <Markets />
         <Stats />
         <About />
+        <LearnMore />
+        <TryItNow />
       </main>
       <Footer />
     </>

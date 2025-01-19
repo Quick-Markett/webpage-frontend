@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
         {FOOTER_LINKS.map(
           (footerSection: FooterSectionProps, sectionIndex: number) => (
             <article
-              className="flex w-full flex-col gap-4 border-b border-neutral-700 pb-4 sm:border-transparent sm:pb-0 lg:gap-6"
+              className="flex w-full flex-col gap-4 border-b border-neutral-300 pb-4 sm:border-transparent sm:pb-0 lg:gap-6"
               key={`${footerSection.title}-${sectionIndex}`}
             >
               <h3 className="font-medium lg:text-lg">{footerSection.title}</h3>

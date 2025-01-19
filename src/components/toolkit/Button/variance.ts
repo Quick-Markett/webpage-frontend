@@ -3,7 +3,7 @@ import { cva } from 'class-variance-authority'
 export const buttonVariants = cva(
   [
     'max-w-fit',
-    'rounded-[4px]',
+    'rounded-sm',
     'px-6',
     'py-2',
     'w-full',
@@ -32,6 +32,12 @@ export const buttonVariants = cva(
           'hover:border-neutral-800',
           'hover:text-neutral-50',
           'hover:brightness-[125%]'
+        ],
+        secondary: [
+          'text-neutral-800',
+          'bg-white',
+          'hover:shadow',
+          'hover:brightness-[110%]'
         ],
         danger: [
           'text-neutral-50',

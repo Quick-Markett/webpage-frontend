@@ -1,13 +1,7 @@
-import { CircleButton } from '@/components/common/CircleButton'
-import { NearbyMarkets } from '../icons/NearbyMarkets'
-
-export const Markets: React.FC = () => {
+export const LearnMore: React.FC = () => {
   return (
-    <section className="bg-white px-4 pb-12 lg:pb-20">
-      <div className="mx-auto flex w-full max-w-2xl flex-col gap-12 lg:max-w-7xl lg:flex-row lg:items-center lg:justify-between lg:gap-12">
-        <figure className="flex w-full max-w-[400px] items-center justify-center lg:max-w-[620px]">
-          <NearbyMarkets className="ml-8 h-[200px] lg:ml-0 lg:h-auto" />
-        </figure>
+    <section className="bg-neutral-50 px-4 py-12 lg:py-20">
+      <div className="mx-auto flex w-full max-w-2xl flex-col-reverse gap-8 lg:max-w-7xl lg:flex-row lg:items-center lg:justify-between lg:gap-16">
         <article className="flex w-full flex-col gap-4 lg:gap-6">
           <h2 className="text-2xl font-medium lg:text-3xl">
             Cobertura ampla para você
@@ -24,10 +18,8 @@ export const Markets: React.FC = () => {
               entregas rápidas e convenientes.
             </p>
           </div>
-          <div className="flex w-full items-center justify-start">
-            <CircleButton label="Ver mais sobre" />
-          </div>
         </article>
+        <figure className="min-h-[320px] w-full rounded-sm bg-slate-200" />
       </div>
     </section>
   )
