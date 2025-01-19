@@ -26,22 +26,18 @@ export async function middleware(request: NextRequest) {
     utm_term: searchParams?.utm_term
   }
 
-  const serverResponse = request
-  if (serverResponse) {
-    serverResponse.cookies.set('current-pathname', request.nextUrl.pathname)
-    serverResponse.cookies.set('current-url', request.nextUrl.href)
+  const response = NextResponse.next()
 
-    serverResponse.cookies.set('searchParams', JSON.stringify(searchParams))
-    serverResponse.cookies.set('userAgent', userAgent)
+  response.cookies.set('current-pathname', request.nextUrl.pathname)
+  response.cookies.set('current-url', request.nextUrl.href)
 
-    if (!hasUtmStoredData) {
-      serverResponse.cookies.set('utmStaticData', JSON.stringify(utmStaticData))
-    }
+  response.cookies.set('searchParams', JSON.stringify(searchParams))
+  response.cookies.set('userAgent', userAgent)
 
-    return serverResponse
+  if (!hasUtmStoredData) {
+    response.cookies.set('utmStaticData', JSON.stringify(utmStaticData))
   }
 
-  const response = NextResponse.next()
   Object.entries(corsHeaders).forEach(([key, value]) => {
     response.headers.set(key, value)
   })
