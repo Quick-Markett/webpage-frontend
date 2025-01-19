@@ -1,5 +1,8 @@
 import { Anchor } from '@/components/toolkit/Anchor'
+
 import { NAVBAR_LINKS } from './data'
+import { Account } from './icons/Account'
+import { Shop } from './icons/Shop'
 
 export const Navbar: React.FC = () => {
   return (
@@ -7,14 +10,18 @@ export const Navbar: React.FC = () => {
       <div className="mx-auto flex w-full max-w-7xl items-center justify-center gap-4 lg:gap-8">
         {NAVBAR_LINKS.map((navbarLink, index) => (
           <Anchor
-            key={`${navbarLink.label}-${index}`}
-            href={navbarLink.href}
-            variant="custom"
             className="cursor-pointer text-xs font-normal transition-all duration-300 hover:text-neutral-900"
+            href={navbarLink.href}
+            key={`${navbarLink.label}-${index}`}
+            variant="custom"
           >
             {navbarLink.label}
           </Anchor>
         ))}
+        <div className="ml-2 flex items-center gap-4 lg:gap-6">
+          <Shop className="h-4 w-4 cursor-pointer text-neutral-700 transition-all duration-300 hover:brightness-125" />
+          <Account className="h-4 w-4 cursor-pointer text-neutral-700 transition-all duration-300 hover:brightness-125" />
+        </div>
       </div>
     </nav>
   )

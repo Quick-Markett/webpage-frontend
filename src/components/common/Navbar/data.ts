@@ -20,10 +20,6 @@ export const NAVBAR_LINKS = [
     href: '/pricing'
   },
   {
-    label: 'FAQ',
-    href: '/perguntas-frequentes'
-  },
-  {
     label: 'Entregas',
     href: '/entregas'
   },
@@ -38,5 +34,9 @@ export const NAVBAR_LINKS = [
   {
     label: 'Comunidade',
     href: '/comunidade'
+  },
+  {
+    label: 'FAQ',
+    href: '/perguntas-frequentes'
   }
 ]

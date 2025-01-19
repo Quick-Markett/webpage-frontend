@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 
+import { Footer } from '@/components/common/Footer'
 import { Navbar } from '@/components/common/Navbar'
 import { getMetaData } from '@/utils/getters/getMetaData'
 
@@ -22,6 +23,7 @@ const Page: NextPage = async () => {
         <Header />
         <Questions />
       </main>
+      <Footer />
     </>
   )
 }
