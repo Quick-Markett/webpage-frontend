@@ -31,7 +31,8 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.js",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "src/app/(institutional-pages)/como-funciona/components/Procedures"
   ],
   "exclude": ["node_modules"]
 }
