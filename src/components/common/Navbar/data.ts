@@ -16,8 +16,8 @@ export const NAVBAR_LINKS = [
     href: '/solucoes'
   },
   {
-    label: 'Pricing',
-    href: '/pricing'
+    label: 'Preços',
+    href: '/precos'
   },
   {
     label: 'Entregas',

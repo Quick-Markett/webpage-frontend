@@ -20,19 +20,19 @@ export const anchorVariants = cva(
     variants: {
       variant: {
         primary: [
-          'text-slate-50',
+          'text-neutral-50',
           'bg-gradient-to-r',
-          'from-slate-900',
-          'to-slate-800',
+          'from-neutral-900',
+          'to-neutral-800',
           'hover:brightness-[115%]'
         ],
         primaryOutline: [
-          'text-slate-700',
+          'text-neutral-700',
           'border',
-          'border-slate-900',
-          'hover:bg-slate-800',
-          'hover:border-slate-800',
-          'hover:text-slate-50'
+          'border-neutral-900',
+          'hover:bg-neutral-800',
+          'hover:border-neutral-800',
+          'hover:text-neutral-50'
         ],
         secondary: [
           'text-neutral-800',
@@ -41,7 +41,7 @@ export const anchorVariants = cva(
           'hover:brightness-[110%]'
         ],
         danger: [
-          'text-slate-50',
+          'text-neutral-50',
           'bg-gradient-to-tr',
           'from-red-600',
           'via-red-500',
