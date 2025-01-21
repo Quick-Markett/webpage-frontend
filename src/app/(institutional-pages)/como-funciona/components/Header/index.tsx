@@ -1,6 +1,7 @@
 import { ArrowRight } from '@/app/(institutional-pages)/entregas/components/icons/ArrowRight'
 import { HalfImageBanner } from '@/components/common/HalfImageBanner'
 import { Button } from '@/components/toolkit/Button'
+import { Container } from '@/components/toolkit/Container'
 
 export const Header: React.FC = async () => {
   return (
@@ -14,7 +15,11 @@ export const Header: React.FC = async () => {
       className="items-center bg-neutral-100"
       imageClassName="2xl:max-h-[480px]"
     >
-      <header className="flex flex-col gap-4 lg:gap-6">
+      <Container
+        as="header"
+        data-cid="how-it-works-header"
+        wrapperClassName="flex flex-col gap-4 lg:gap-6"
+      >
         <article className="flex flex-col gap-2">
           <h1 className="text-2xl font-semibold lg:text-4xl">
             Descubra como nossa plataforma transforma entregas
@@ -32,7 +37,7 @@ export const Header: React.FC = async () => {
           <p className="text-sm lg:text-base">Quero saber mais</p>
           <ArrowRight className="h-3 w-3 lg:h-4 lg:w-4" />
         </Button>
-      </header>
+      </Container>
     </HalfImageBanner>
   )
 }

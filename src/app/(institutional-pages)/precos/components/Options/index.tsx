@@ -1,11 +1,16 @@
 import { Button } from '@/components/toolkit/Button'
+import { Container } from '@/components/toolkit/Container'
 import { formatCurrency } from '@/utils/getters/getFormattedCurrency'
 
 import { OPTIONS_DATA } from './data'
 
 export const Options: React.FC = () => {
   return (
-    <section className="bg-neutral-50 px-4 py-12 lg:py-20">
+    <Container
+      as="section"
+      data-cid="pricing-options"
+      wrapperClassName="bg-neutral-50 py-12 lg:py-20"
+    >
       <div className="mx-auto flex w-full max-w-2xl flex-col gap-8 lg:max-w-7xl lg:gap-16">
         <article className="flex flex-col items-center gap-2">
           <h2 className="text-left text-2xl font-semibold lg:text-center lg:text-3xl">
@@ -116,6 +121,6 @@ export const Options: React.FC = () => {
           * Valores sujeitos a alteração de preço
         </p>
       </div>
-    </section>
+    </Container>
   )
 }

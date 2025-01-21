@@ -1,8 +1,14 @@
+import { Container } from '@/components/toolkit/Container'
+
 import { PROCEDURES_SECTIONS } from './data'
 
 export const Procedures: React.FC = async () => {
   return (
-    <section className="flex flex-col gap-8 bg-white px-4 py-12 lg:gap-12 lg:py-20">
+    <Container
+      as="section"
+      data-cid="how-it-works-procedures"
+      wrapperClassName="flex flex-col gap-8 bg-white py-12 lg:gap-12 lg:py-20"
+    >
       {PROCEDURES_SECTIONS.map((section, index: number) => (
         <div
           className="mx-auto flex w-full max-w-2xl flex-col-reverse gap-8 border-b border-neutral-300 pb-8 last:border-transparent lg:max-w-7xl lg:flex-row lg:items-center lg:justify-between lg:gap-16 lg:pb-12"
@@ -26,6 +32,6 @@ export const Procedures: React.FC = async () => {
           />
         </div>
       ))}
-    </section>
+    </Container>
   )
 }

@@ -1,6 +1,12 @@
+import { Container } from '@/components/toolkit/Container'
+
 export const LearnMore: React.FC = () => {
   return (
-    <section className="bg-neutral-50 px-4 py-12 lg:py-20">
+    <Container
+      as="section"
+      data-cid="delivery-learn-more"
+      wrapperClassName="bg-neutral-50 py-12 lg:py-20"
+    >
       <div className="mx-auto flex w-full max-w-2xl flex-col-reverse gap-8 lg:max-w-7xl lg:flex-row lg:items-center lg:justify-between lg:gap-16">
         <article className="flex w-full flex-col gap-4 lg:gap-6">
           <h2 className="text-2xl font-medium lg:text-3xl">
@@ -21,6 +27,6 @@ export const LearnMore: React.FC = () => {
         </article>
         <figure className="min-h-[320px] w-full rounded-sm bg-slate-200" />
       </div>
-    </section>
+    </Container>
   )
 }

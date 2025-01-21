@@ -1,10 +1,16 @@
+import { Container } from '@/components/toolkit/Container'
+
 import { ProductivityImage } from '../icons/ProductivityImage'
 import { CARDS_DATA } from './data'
 import { CARD_ICONS } from './icons'
 
 export const Productivity: React.FC = async () => {
   return (
-    <section className="bg-neutral-50 px-4 py-12 lg:py-20">
+    <Container
+      as="section"
+      data-cid="how-it-works-productivity"
+      wrapperClassName="bg-neutral-50 py-12 lg:py-20"
+    >
       <div className="mx-auto flex w-full max-w-2xl flex-col items-center gap-8 lg:max-w-7xl lg:gap-12">
         <article className="flex w-full flex-col gap-4 lg:items-center">
           <h2 className="l:text-center text-2xl font-medium lg:text-3xl">
@@ -40,6 +46,6 @@ export const Productivity: React.FC = async () => {
           </figure>
         </div>
       </div>
-    </section>
+    </Container>
   )
 }

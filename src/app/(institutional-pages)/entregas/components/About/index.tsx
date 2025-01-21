@@ -1,6 +1,12 @@
+import { Container } from '@/components/toolkit/Container'
+
 export const About: React.FC = () => {
   return (
-    <section className="bg-white px-4 py-12 lg:py-20">
+    <Container
+      as="section"
+      data-cid="delivery-about"
+      wrapperClassName="bg-white py-12 lg:py-20"
+    >
       <div className="mx-auto flex w-full max-w-2xl flex-col gap-12 lg:max-w-7xl lg:gap-16">
         <article className="flex w-full flex-col gap-2">
           <h2 className="text-2xl font-medium lg:text-3xl">
@@ -25,6 +31,6 @@ export const About: React.FC = () => {
           </p>
         </article>
       </div>
-    </section>
+    </Container>
   )
 }

@@ -1,8 +1,13 @@
 import { Anchor } from '@/components/toolkit/Anchor'
+import { Container } from '@/components/toolkit/Container'
 
 export const Invite: React.FC = () => {
   return (
-    <section className="bg-neutral-700 px-4 py-12 lg:py-16">
+    <Container
+      as="section"
+      data-cid="pricing-invite"
+      wrapperClassName="bg-neutral-700 py-12 lg:py-16"
+    >
       <div className="mx-auto flex w-full max-w-2xl flex-col items-center gap-6 lg:max-w-7xl lg:flex-row lg:justify-between">
         <article className="flex w-full flex-col">
           <h2 className="text-2xl font-semibold text-slate-50 lg:text-3xl">
@@ -20,6 +25,6 @@ export const Invite: React.FC = () => {
           Saiba como funciona
         </Anchor>
       </div>
-    </section>
+    </Container>
   )
 }

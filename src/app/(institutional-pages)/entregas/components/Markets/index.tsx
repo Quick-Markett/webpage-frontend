@@ -1,10 +1,15 @@
 import { CircleButton } from '@/components/common/CircleButton'
+import { Container } from '@/components/toolkit/Container'
 
 import { NearbyMarkets } from '../icons/NearbyMarkets'
 
 export const Markets: React.FC = () => {
   return (
-    <section className="bg-white px-4 pb-12 lg:pb-20">
+    <Container
+      as="section"
+      data-cid="delivery-markets"
+      wrapperClassName="bg-white pb-12 lg:pb-20"
+    >
       <div className="mx-auto flex w-full max-w-2xl flex-col gap-12 lg:max-w-7xl lg:flex-row lg:items-center lg:justify-between lg:gap-12">
         <figure className="flex w-full max-w-[400px] items-center justify-center lg:max-w-[620px]">
           <NearbyMarkets className="ml-8 h-[200px] lg:ml-0 lg:h-auto" />
@@ -30,6 +35,6 @@ export const Markets: React.FC = () => {
           </div>
         </article>
       </div>
-    </section>
+    </Container>
   )
 }
