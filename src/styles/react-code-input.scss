@@ -1,0 +1,9 @@
+div[class^='styles_react-code-input'] {
+  input {
+    @apply font-nexa-text text-slate-700;
+
+    &:focus {
+      @apply border-blue-400 caret-current duration-default;
+    }
+  }
+}
