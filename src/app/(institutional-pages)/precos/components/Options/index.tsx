@@ -9,9 +9,9 @@ export const Options: React.FC = () => {
     <Container
       as="section"
       data-cid="pricing-options"
-      wrapperClassName="bg-neutral-50 py-12 lg:py-20"
+      wrapperClassName="bg-neutral-50 w-full py-12 lg:py-20"
     >
-      <div className="mx-auto flex w-full max-w-2xl flex-col gap-8 lg:max-w-7xl lg:gap-16">
+      <div className="mx-auto flex w-full max-w-2xl flex-col items-center gap-8 lg:max-w-7xl lg:gap-16">
         <article className="flex flex-col items-center gap-2">
           <h2 className="text-left text-2xl font-semibold lg:text-center lg:text-3xl">
             Nossos Planos Oferecidos
@@ -22,7 +22,7 @@ export const Options: React.FC = () => {
             experiência em nossa plataforma
           </p>
         </article>
-        <ul className="flex h-full flex-col gap-6 lg:max-w-6xl lg:flex-row lg:items-stretch lg:justify-between lg:gap-12 lg:self-stretch">
+        <ul className="mx-auto flex h-full w-full flex-col gap-6 lg:max-w-6xl lg:flex-row lg:items-stretch lg:justify-between lg:gap-12 lg:self-stretch">
           <li className="rouded-sm flex w-full flex-col gap-4 bg-white lg:gap-6">
             <hr
               className={`h-4 w-full rounded-t-sm bg-gradient-to-r from-purple-600 to-purple-300`}
