@@ -31,7 +31,7 @@ export const Header: React.FC = async () => {
           </p>
         </article>
         <Button
-          className="flex items-center gap-3 font-normal text-amber-600 transition-all duration-300 hover:brightness-125"
+          className="mt-4 flex items-center gap-3 font-normal text-amber-600 transition-all duration-300 hover:brightness-125"
           variant="custom"
         >
           <p className="text-sm lg:text-base">Quero saber mais</p>
