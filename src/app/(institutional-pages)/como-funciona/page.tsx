@@ -6,10 +6,11 @@ import { Navbar } from '@/components/common/Navbar'
 import { getMetaData } from '@/utils/seo/getMetaData'
 
 import { HowItWorks } from '../entregas/components/HowItWorks'
-import { Stats } from '../entregas/components/Stats'
+import { AskForADemo } from './components/AskForADemo'
 import { Header } from './components/Header'
 import { Procedures } from './components/Procedures'
 import { Productivity } from './components/Productivity'
+import { Stats } from './components/Stats'
 
 export async function generateMetadata() {
   return getMetaData({
@@ -30,6 +31,7 @@ const Page: NextPage = async () => {
         <Procedures />
         <Stats />
         <HowItWorks />
+        <AskForADemo />
       </main>
       <Footer />
     </>

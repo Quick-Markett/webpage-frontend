@@ -3,7 +3,9 @@
 import { usePathname } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 
+import { Button } from '@/components/toolkit/Button'
 import { InputField } from '@/components/toolkit/Fields/InputField'
+import { LabelField } from '@/components/toolkit/Fields/LabelField'
 import { PhoneNumber } from '@/components/toolkit/PhoneNumber'
 import { getMappedHubspotData } from '@/utils/hubspot/getMappedHubspotData'
 import { hubspotFormSubmit } from '@/utils/hubspot/hubspotFormSubmit'
@@ -58,18 +60,28 @@ export const FreeDemoForm: React.FC = ({
     >
       <InputField
         id="name"
-        placeholder="Seu nome"
+        label="Informe o seu nome"
+        placeholder="Seu nome aqui"
+        variant="secondary"
         {...register('name')}
         errorMessage={errors?.root?.message}
       />
+
       <InputField
         id="email"
-        placeholder="Seu email"
+        label="Informe o seu email"
+        placeholder="Seu email aqui"
+        variant="secondary"
         {...register('email')}
         errorMessage={errors?.root?.message}
       />
 
-      <div className="flex flex-col gap-4 sm:flex-row">
+      <div className="flex flex-col gap-1">
+        <LabelField
+          id="phone"
+          label="Seu número de telefone"
+          variant="secondary"
+        />
         <PhoneNumber
           formMethods={formMethods}
           id="phone"
@@ -77,6 +89,10 @@ export const FreeDemoForm: React.FC = ({
           placeholder="Insira seu telefone"
         />
       </div>
+
+      <Button className="mt-6 min-w-full" type="submit" variant="primary">
+        Solicitar
+      </Button>
     </form>
   )
 }

@@ -28,7 +28,7 @@ export const Procedures: React.FC = async () => {
             </div>
           </article>
           <figure
-            className={`min-h-[320px] w-full rounded-sm bg-slate-200 ${index % 2 === 0 ? 'lg:order-2' : 'lg:order-1'}`}
+            className={`min-h-[320px] w-full rounded-sm bg-neutral-100 ${index % 2 === 0 ? 'lg:order-2' : 'lg:order-1'}`}
           />
         </div>
       ))}

@@ -22,9 +22,9 @@ export const inputVariants = cva(
         ],
         secondary: [
           'border',
-          'border-slate-300',
+          'border-neutral-300',
           'py-[0.40rem]',
-          'focus:border-slate-500',
+          'focus:border-neutral-500',
           'bg-white'
         ]
       },

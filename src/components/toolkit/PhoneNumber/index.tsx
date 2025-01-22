@@ -60,7 +60,9 @@ export const PhoneNumber: React.FC<PhoneNumberProps> = ({
         name={name}
         onChange={handleSetPhone}
         value={phone}
+        disableCountryGuess
         forceDialCode
+        hideDropdown
       />
       <FieldError error={errors[name]?.message} />
     </div>

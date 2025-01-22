@@ -1,7 +1,6 @@
 import { forwardRef } from 'react'
 
 import { Select } from '../../Select'
-// import { ErrorField } from '../ErrorField'
 import { LabelField } from '../LabelField'
 import { SelectFieldProps } from './types'
 
@@ -20,10 +19,6 @@ export const SelectField = forwardRef<HTMLSelectElement, SelectFieldProps>(
         />
 
         <Select id={id} ref={ref} variant={variant} {...props} />
-
-        {/* <ErrorField
-          errorMessage={errorMessage || 'Preencha esse campo corretamente'}
-        /> */}
       </fieldset>
     )
   }
