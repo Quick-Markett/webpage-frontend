@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 
+import { FreeDemoForm } from '@/components/common/Forms/FreeDemoForm'
 import { getMetaData } from '@/utils/seo/getMetaData'
 
 export async function generateMetadata() {
@@ -11,7 +12,11 @@ export async function generateMetadata() {
 }
 
 const Page: NextPage = async () => {
-  return <main>teste</main>
+  return (
+    <main>
+      <FreeDemoForm />
+    </main>
+  )
 }
 
 export default Page
