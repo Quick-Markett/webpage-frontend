@@ -12,8 +12,8 @@ export const NAVBAR_LINKS = [
     href: '/clientes'
   },
   {
-    label: 'Soluções',
-    href: '/solucoes'
+    label: 'Plataforma',
+    href: '/plataforma'
   },
   {
     label: 'Preços',

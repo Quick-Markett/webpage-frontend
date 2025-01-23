@@ -9,8 +9,9 @@ import { Questions } from './components/Questions'
 
 export async function generateMetadata() {
   return getMetaData({
-    title: '',
-    description: '',
+    title: 'Perguntas Frequentes - Dúvidas Respondidas',
+    description:
+      'Tire suas dúvidas! Encontre respostas sobre entregas, cadastro, pagamentos e outros aspectos do serviço de forma clara e objetiva.',
     opengraph: ''
   })
 }

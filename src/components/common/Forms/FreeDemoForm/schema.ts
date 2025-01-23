@@ -16,7 +16,6 @@ export const freeDemoFormSchema = ({
       .refine(value => fullNameValidation({ value }), {
         message: requiredFieldCopy
       }),
-    page: z.string().nonempty(),
     email: z
       .string()
       .nonempty(requiredFieldCopy)

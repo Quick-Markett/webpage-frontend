@@ -15,8 +15,9 @@ import { TryItNow } from './components/TryItNow'
 
 export async function generateMetadata() {
   return getMetaData({
-    title: '',
-    description: '',
+    title: 'Entregas Rápidas e Eficientes',
+    description:
+      'Descubra como garantimos entregas ágeis e otimizadas para mercados, promovendo praticidade e eficiência para todos os usuários.',
     opengraph: ''
   })
 }

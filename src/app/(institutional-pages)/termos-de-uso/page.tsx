@@ -9,8 +9,9 @@ import { Paragraphs } from './components/Paragraphs'
 
 export async function generateMetadata() {
   return getMetaData({
-    title: '',
-    description: '',
+    title: 'Termos de Uso - Regras e Condições',
+    description:
+      'Leia os Termos de Uso e entenda as condições e responsabilidades para utilizar nossos serviços de forma segura e transparente.',
     opengraph: ''
   })
 }

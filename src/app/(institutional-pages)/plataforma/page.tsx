@@ -5,18 +5,17 @@ import { Footer } from '@/components/common/Footer'
 import { Navbar } from '@/components/common/Navbar'
 import { getMetaData } from '@/utils/seo/getMetaData'
 
-import { HowItWorks } from '../entregas/components/HowItWorks'
-import { AskForADemo } from './components/AskForADemo'
+import { Procedures } from '../como-funciona/components/Procedures'
+import { Productivity } from '../como-funciona/components/Productivity'
+import { LearnMore } from '../entregas/components/LearnMore'
+import { Markets } from '../entregas/components/Markets'
 import { Header } from './components/Header'
-import { Procedures } from './components/Procedures'
-import { Productivity } from './components/Productivity'
-import { Stats } from './components/Stats'
 
 export async function generateMetadata() {
   return getMetaData({
-    title: 'Como Funciona - Passo a Passo Simples',
+    title: 'Conheça Nossa Plataforma - Solução para Mercados',
     description:
-      'Veja como nosso serviço funciona: da compra à entrega, entenda todo o processo de forma prática e eficiente.',
+      'Descubra como nossa plataforma transforma operações de mercados com tecnologia avançada, entregas ágeis e uma experiência otimizada para clientes e parceiros.',
     opengraph: ''
   })
 }
@@ -30,9 +29,8 @@ const Page: NextPage = async () => {
         <ClientsCarousel />
         <Productivity />
         <Procedures />
-        <Stats />
-        <HowItWorks />
-        <AskForADemo />
+        <Markets />
+        <LearnMore />
       </main>
       <Footer />
     </>

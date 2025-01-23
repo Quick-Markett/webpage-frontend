@@ -30,9 +30,10 @@ export const FreeDemoForm: React.FC = ({
   })
 
   const {
+    reset,
     register,
     handleSubmit,
-    formState: { errors }
+    formState: { errors, isSubmitting }
   } = formMethods
 
   const sendDataToHubspot = async (payload: FreeDemoFormInputs) => {
@@ -50,6 +51,8 @@ export const FreeDemoForm: React.FC = ({
       formVariant: 'freeDemo',
       url: pathname
     })
+
+    reset()
   }
 
   return (
@@ -90,7 +93,12 @@ export const FreeDemoForm: React.FC = ({
         />
       </div>
 
-      <Button className="mt-6 min-w-full" type="submit" variant="primary">
+      <Button
+        className="mt-6 min-w-full"
+        isLoading={isSubmitting}
+        type="submit"
+        variant="primary"
+      >
         Solicitar
       </Button>
     </form>

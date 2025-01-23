@@ -12,8 +12,9 @@ import { Options } from './components/Options'
 
 export async function generateMetadata() {
   return getMetaData({
-    title: '',
-    description: '',
+    title: 'Planos e Preços para Todos os Perfis',
+    description:
+      'Confira nossos planos e escolha a solução ideal para você, com preços justos, flexibilidade e benefícios que atendem às suas necessidades.',
     opengraph: ''
   })
 }
