@@ -11,4 +11,4 @@ export const CARDS_DATA = [
     description:
       'Com rotas otimizadas e processos ágeis, sua equipe consegue realizar mais entregas em menos tempo, aumentando a eficiência operacional e a satisfação do cliente.'
   }
-]
+] as const

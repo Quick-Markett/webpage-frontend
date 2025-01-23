@@ -49,4 +49,4 @@ export const FAQ_QUESTIONS = [
     description:
       'Basta acessar a página de cadastro em nosso site, preencher o formulário de parceria e nossa equipe entrará em contato para iniciar o processo de integração.'
   }
-]
+] as const

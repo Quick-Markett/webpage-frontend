@@ -11,4 +11,4 @@ export const STATS = [
     prefix: '98%',
     label: 'Satisfação geral dos <br className="hidden xl:block" /> usuários'
   }
-]
+] as const

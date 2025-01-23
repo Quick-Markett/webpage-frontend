@@ -14,4 +14,4 @@ export const CARDS = [
     description:
       'O entregador segue a rota otimizada até o seu endereço. Durante todo o trajeto, você pode rastrear a entrega em tempo real e receber notificações sobre o status do pedido.'
   }
-]
+] as const

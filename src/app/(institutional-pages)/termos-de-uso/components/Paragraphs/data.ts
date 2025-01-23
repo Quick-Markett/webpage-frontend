@@ -65,4 +65,4 @@ export const PARAGRAPHS = [
     description:
       'Ao utilizar nossa plataforma, você declara estar de acordo com todos os pontos mencionados nestes Termos de Uso. Obrigado por escolher nossa solução para suas entregas!'
   }
-]
+] as const

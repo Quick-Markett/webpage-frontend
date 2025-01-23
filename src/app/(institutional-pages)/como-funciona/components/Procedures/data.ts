@@ -14,4 +14,4 @@ export const PROCEDURES_SECTIONS = [
     description:
       'Após a confirmação do pagamento, nossos entregadores iniciam o processo de transporte imediato. Receba seus produtos frescos e de qualidade no endereço escolhido em tempo recorde.'
   }
-]
+] as const

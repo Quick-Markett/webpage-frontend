@@ -1,5 +1,7 @@
 import { Container } from '@/components/toolkit/Container'
 
+import { MagnifyingGlass } from '../icons/MagnifyingGlass'
+
 export const SupportTitle: React.FC = () => {
   return (
     <Container
@@ -16,11 +18,16 @@ export const SupportTitle: React.FC = () => {
           Soluções rápidas para todas as suas dúvidas e problemas.
         </p>
       </article>
-      <input
-        className="w-full max-w-2xl rounded-sm px-6 py-2.5 text-base outline-none ring-1 ring-neutral-300 lg:text-xl"
-        placeholder="Digite aqui a sua dúvida"
-        type="text"
-      />
+      <div className="group flex w-full max-w-2xl items-center gap-4 rounded-sm px-6 py-3 ring-1 ring-neutral-300 transition-all duration-300 focus-within:ring-yellow-700 lg:gap-6">
+        <figure className="w-auto">
+          <MagnifyingGlass className="h-4 w-4 cursor-pointer text-neutral-400 transition-all duration-300 hover:text-neutral-500 lg:h-6 lg:w-6" />
+        </figure>
+        <input
+          className="w-full text-base outline-none"
+          placeholder="Digite aqui a sua dúvida"
+          type="text"
+        />
+      </div>
     </Container>
   )
 }
