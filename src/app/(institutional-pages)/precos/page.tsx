@@ -5,6 +5,7 @@ import { Footer } from '@/components/common/Footer'
 import { Navbar } from '@/components/common/Navbar'
 import { getMetaData } from '@/utils/seo/getMetaData'
 
+import { AskForADemo } from './components/AskForADemo'
 import { Header } from './components/Header'
 import { Invite } from './components/Invite'
 import { LearnMore } from './components/LearnMore'
@@ -27,8 +28,9 @@ const Page: NextPage = async () => {
         <Header />
         <Options />
         <ClientsCarousel />
-        <Invite />
         <LearnMore />
+        <Invite />
+        <AskForADemo />
       </main>
       <Footer />
     </>

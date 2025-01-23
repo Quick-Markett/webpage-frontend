@@ -8,10 +8,6 @@ export const NAVBAR_LINKS = [
     href: '/como-funciona'
   },
   {
-    label: 'Clientes',
-    href: '/clientes'
-  },
-  {
     label: 'Plataforma',
     href: '/plataforma'
   },
@@ -31,10 +27,10 @@ export const NAVBAR_LINKS = [
     label: 'Termos de uso',
     href: '/termos-de-uso'
   },
-  {
-    label: 'Comunidade',
-    href: '/comunidade'
-  },
+  // {
+  //   label: 'Comunidade',
+  //   href: '/comunidade'
+  // },
   {
     label: 'FAQ',
     href: '/perguntas-frequentes'
