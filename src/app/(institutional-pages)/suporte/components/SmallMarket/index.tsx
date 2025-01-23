@@ -7,7 +7,7 @@ export const SmallMarket: React.FC = () => {
     <Container
       as="section"
       data-cid="delivery-learn-more"
-      wrapperClassName="bg-white py-12 lg:py-20"
+      wrapperClassName="bg-neutral-50 py-12 lg:py-20"
     >
       <div className="mx-auto flex w-full max-w-2xl flex-col-reverse gap-8 lg:max-w-7xl lg:flex-row lg:items-center lg:justify-between lg:gap-16">
         <article className="flex w-full flex-col gap-4 lg:gap-6">
@@ -21,7 +21,7 @@ export const SmallMarket: React.FC = () => {
             </p>
           </div>
           <Anchor
-            className="mt-4 flex items-center gap-3 font-normal text-amber-600 transition-all duration-300 hover:brightness-125"
+            className="mt-4 flex items-center gap-3 font-normal text-neutral-600 transition-all duration-300 hover:brightness-125"
             href="#"
             variant="custom"
           >

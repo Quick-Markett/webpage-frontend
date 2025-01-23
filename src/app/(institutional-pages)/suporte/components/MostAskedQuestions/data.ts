@@ -10,8 +10,5 @@ export const MOST_ASKED_QUESTIONS = [
   'Posso alterar o horário de entrega após confirmar?',
   'O que faço se não receber minha entrega no prazo?',
   'Como posso entrar em contato com o suporte?',
-  'Como faço para atualizar meus dados cadastrais?',
-  'Há algum desconto ou promoção disponível?',
-  'Posso agendar entregas para dias específicos?',
-  'Como funciona a política de devolução ou reembolso?'
+  'Como faço para atualizar meus dados cadastrais?'
 ] as const

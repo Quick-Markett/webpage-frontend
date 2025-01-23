@@ -8,7 +8,7 @@ export const MostAskedQuestions: React.FC = () => {
       as="section"
       className="flex w-full flex-col gap-8 lg:gap-16"
       data-cid="most-asked-questions-support"
-      wrapperClassName="bg-neutral-50 py-12 lg:py-20"
+      wrapperClassName="bg-neutral-100 py-12 lg:py-20"
     >
       <article className="flex w-full flex-col gap-2">
         <h2 className="text-left text-2xl font-semibold lg:text-3xl">

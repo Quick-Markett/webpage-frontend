@@ -6,10 +6,10 @@ export const Header: React.FC = () => {
   return (
     <Container
       as="section"
-      className=""
+      className="px-0"
       container="fluid"
       data-cid="support-header"
-      wrapperClassName="w-full max-w-full"
+      wrapperClassName="px-0 w-full max-w-full"
     >
       <figure className="max-h-[420px] max-w-full">
         <Image
