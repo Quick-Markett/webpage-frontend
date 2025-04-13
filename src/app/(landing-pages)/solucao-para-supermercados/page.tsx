@@ -16,7 +16,7 @@ const Page: NextPage = async () => {
   return (
     <>
       <Navbar />
-      <main>/solucao-para-supermercados</main>
+      <main>odwqkodwqkdqwkodqwkdqwodkqwopdqwkodwq</main>
       <Footer />
     </>
   )
