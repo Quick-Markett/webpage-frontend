@@ -3,6 +3,7 @@ import { Footer } from '@/components/common/Footer'
 import { Navbar } from '@/components/common/Navbar'
 import { getMetaData } from '@/utils/seo/getMetaData'
 import { ClientsCarousel } from '@/components/common/ClientsCarousel'
+import { CircleButton } from '@/components/common/CircleButton'
 
 
 export async function generateMetadata() {
@@ -21,6 +22,7 @@ const Page: NextPage = async () => {
         <h1 className="text-5xl font-bold text-gray-600 text-blue-900">Acelerando seu negócio</h1>
       </main>
       <p className='text-center text-2xl'>Soluções avançadas para a sua empresa</p>
+      <CircleButton label='Saiba Mais' href=''/>
       <ClientsCarousel/>
       <div>
         
